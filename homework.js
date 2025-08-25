@@ -19,4 +19,4 @@ const student = {
 };
 
 console.log(student);
-console.log(firstName, "thinks that it's very fun to yell", student.niceFood[1], "at passing stangers.")
+console.log(firstName, "thinks that it's very fun to yell", student.niceFood[1], "at passing strangers.")
