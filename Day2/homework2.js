@@ -18,18 +18,18 @@ function subtract(a, b) {
 //subtract(10, 3);
 
 //Task 4
-function square(number) {
+/* function square(number) {
     number = Math.pow(number,2);
     let result = number;
     console.log(result);
-}
+} */
 //square(2);
 //square(8);
 
 //Task 5
-function profile(name, age, likesCoding) {
+/* function profile(name, age, likesCoding) {
     console.log(`Hi I'm ${name}, I am ${age}, and it's ${likesCoding} that I like coding.`);
-    }
+    } */
 //profile("Sam", 25, true);
 //profile("Kirsten", 4, false);
 
@@ -59,8 +59,26 @@ function calculator(a, b, operator) {
     }
 
 };
+//calculator(3,5,"add");
+//calculator(5,1, "subtract");
+//calculator(5,3,"multiply");
+//calculator(20,10,"divide");
 
-calculator(3,5,"add");
-calculator(5,1, "subtract");
-calculator(5,3,"multiply");
-calculator(20,10,"divide");
+//Task 8
+square = (a) => a * a;
+//console.log(square(3));
+
+//Task 9
+isAdult = (age) => {
+    return age < 18 ? false : true;
+};
+function profile(name, age, likesCoding) {
+    let confirmAdult = "";
+    if (isAdult(age) === false) {
+        confirmAdult = "not "
+    }
+    console.log(`Hi I'm ${name}, I am ${age} and I'm ${confirmAdult}an adult. Additionally it's ${likesCoding} that I like coding.`);
+    };
+
+profile("Kvik", 13, false);
+profile("Elisa", 33, true);
