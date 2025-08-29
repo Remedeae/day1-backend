@@ -7,7 +7,7 @@ interface Contact {
 };
 
 let contactBook: Contact[] = []
-let contact1: Contact = {
+const contact1: Contact = {
     id: 23,
     name: "Lars-Ingvar",
     email: "ingan@hemvarnet.se",
@@ -45,7 +45,7 @@ const findByName = (name: string) => {
     search[0] === name ? console.log(contactInfo) : console.log("Unknown user");
 };
 
-findByName("Si");
+//findByName("Cat");
 
 const removeById = (id: number) => {
     let newContactBook : Contact[] = contactBook.filter(c => c.id !== id);
@@ -55,4 +55,4 @@ const removeById = (id: number) => {
     console.log(contactBook);
 };
 
-//removeById(1);
+removeById(7);
